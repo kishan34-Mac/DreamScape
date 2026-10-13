@@ -1,0 +1,45 @@
+:root {
+  /* Brand Palettes */
+  --color-bg-base: #070810;
+  --color-bg-navy: #0B1020;
+  --color-bg-elevated: rgba(11, 16, 32, 0.72);
+  --color-bg-surface: rgba(18, 24, 48, 0.65);
+  --color-bg-card: rgba(22, 28, 56, 0.55);
+
+  --color-violet: #7564FF;
+  --color-violet-glow: rgba(117, 100, 255, 0.35);
+  --color-cyan: #79E7FF;
+  --color-cyan-glow: rgba(121, 231, 255, 0.3);
+  --color-white: #F3F1FF;
+  --color-lavender: #AAA6C8;
+  --color-muted: #7E7A9C;
+  --color-amber: #F59E0B;
+  --color-emerald: #10B981;
+  --color-rose: #EC4899;
+
+  /* Glassmorphism & Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(121, 231, 255, 0.35);
+  --border-glow: rgba(117, 100, 255, 0.4);
+  --backdrop-blur: 16px;
+
+  /* Typography */
+  --font-display: 'Cinzel', serif;
+  --font-headline: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Layers */
+  --z-canvas: 1;
+  --z-overlay: 10;
+  --z-hud: 20;
+  --z-nav: 30;
+  --z-modal: 40;
+  --z-transition: 50;
+  --z-cursor: 9999;
+
+  /* Transitions */
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snappy: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s var(--ease-cinematic);
+  --transition-slow: 0.7s var(--ease-cinematic);
+}

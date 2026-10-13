@@ -1,0 +1,60 @@
+@keyframes etherealFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    filter: drop-shadow(0 0 12px var(--color-violet-glow));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 24px var(--color-cyan-glow));
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grainAnimation {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-2%, -3%); }
+  30% { transform: translate(3%, 1%); }
+  50% { transform: translate(-1%, 4%); }
+  70% { transform: translate(2%, -2%); }
+  90% { transform: translate(-3%, 2%); }
+}
+
+@keyframes subtleTwinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+@keyframes warpFlash {
+  0% { opacity: 0; backdrop-filter: blur(0px); }
+  50% { opacity: 1; backdrop-filter: blur(24px); }
+  100% { opacity: 0; backdrop-filter: blur(0px); }
+}
+
+.animate-float {
+  animation: etherealFloat 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 24s linear infinite;
+}
